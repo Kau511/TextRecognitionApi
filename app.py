@@ -6,7 +6,7 @@ import os
 import numpy as np
 from flask_cors import CORS, cross_origin
 from werkzeug.utils import secure_filename
-from config import config
+# from config import config
 import pyrebase
 import re
 import datetime
@@ -14,8 +14,8 @@ import datetime
 
 
 ALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg'}
-firebase = pyrebase.initialize_app(config)
-storage = firebase.storage()
+# firebase = pyrebase.initialize_app(config)
+# storage = firebase.storage()
 
 app = Flask(__name__)
 CORS(app)
